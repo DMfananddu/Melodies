@@ -39,6 +39,7 @@ void Melod::read () {
 		cin >> mname;
 		cout << endl;
 		name = mname;
+		fname = "..//Composition//" + mname + ".txt";
 		fin.open(fname);
 	}
 	vector <string> header;
@@ -103,7 +104,7 @@ void Melod::read () {
 
 void Melod::setting() { //задание характеристик мелодии
 	if (opred) {
-		cout << "Звук полностью определён.";
+		cout << "Мелодия полностью определена.\n";
 	}
 	else {
 		if (quantity==-1) {
