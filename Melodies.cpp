@@ -35,7 +35,12 @@ void Melod::read () {
 		cout << "Не удается открыть файл с именем: " << fname << endl;
 		setColor (WHITE, BLACK);
 		otkr=false;
-		}
+		cout << "Введите заново название файла мелодии: ";
+		cin >> mname;
+		cout << endl;
+		name = mname;
+		fin.open(fname);
+	}
 	vector <string> header;
 	otkr=true;
 	char line [500];// тут храним саму считанную из файла строку
